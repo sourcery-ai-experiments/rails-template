@@ -1,24 +1,12 @@
-# README
+# Rails-Sprockets-Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 6 Template without webpacker
 
-Things you may want to cover:
+# Getting started
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Create repo by clicking on use this template.
+2. Clone new repo.
+3. Update `.ruby-gemset` file with your project name and create gemset with same name.
+4. Update database yml to use database of your choice `mysql` `postgres` and update relevant gem in Gemfile. 
+5. Install bundler within `gem install bundler`.
+6. Install dependencies using bundler `bundler install`.
