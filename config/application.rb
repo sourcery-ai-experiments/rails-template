@@ -6,10 +6,20 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module RailsCoreui
+module RailsTemplate
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+
+    config.generators do |g|
+      g.test_framework nil
+      # g.factory_bot false
+      # g.template_engine nil
+      # g.asstes false
+      # g.helper false
+      # g.stylesheets false
+      # g.javascripts false
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
