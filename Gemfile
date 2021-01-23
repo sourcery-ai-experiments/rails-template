@@ -5,6 +5,8 @@ ruby "~> #{`cat .ruby-version`.strip}"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', "~> 6.0"
+
+gem 'stimulus-rails'
 # Use Postgres as the database for Active Record
 gem "pg", "~> 1.2"
 # Use Puma as the app server
