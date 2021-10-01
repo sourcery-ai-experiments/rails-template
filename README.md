@@ -3,16 +3,15 @@
 Rails 6 Template without webpacker
 
 ### Requirements
-1. Ruby 3.0
+1. Ruby 3.0.2
 2. Rails 6.1 (Latest stable version)
-3. Postgres 12
+3. Postgres 13
 4. Node js and Yarn
 
 # Getting started
 
 1. Create repo by clicking on use this template.
 2. Clone new repo.
-3. Update `.ruby-gemset` file with your project name and create gemset with same name.
 4. Install bundler within `gem install bundler`.
 5. Install dependencies using bundler `bundler install`.
 6. Rename project using this command `rails g rename:into New-Name`
