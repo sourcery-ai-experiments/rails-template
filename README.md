@@ -1,11 +1,11 @@
 # Rails-Sprockets-Template
 
-Rails 6 Template without webpacker
+Rails 6.1 Template without webpacker
 
 ### Requirements
-1. Ruby 3.0.2
-2. Rails 6.1 (Latest stable version)
-3. Postgres 13
+1. Ruby 3.1.1
+2. Rails 7.0.2
+3. Postgres 14
 4. Node js and Yarn
 
 # Getting started
@@ -17,7 +17,7 @@ Rails 6 Template without webpacker
 6. Rename project using this command `rails g rename:into New-Name`
 7. Create Database and migrate `rails db:create db:migrate`
 8. Create Credentials file alongside master key file `EDITOR="nano" rails credentials:edit`
-9. Start Server `rails s` and visit `http://localhost:3000`
+9. Start Server `bin/dev` and visit `http://localhost:3000`
 
 
 ##### Adding gems
@@ -43,7 +43,7 @@ $ annotate --models
 
 ##### Ruby Style Guide, Linter and fixed
 We use [Standard](https://github.com/testdouble/standard) for Ruby Style
-Before committing code, you should run this command to see any issues 
+Before committing code, you should run this command to see any issues
 ```console
 $ bundle exec standardrb
 ```

@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>
+      <%= "#{yield(:title)} | " if content_for?(:title) %>
+      BrainX Rails 7 Template
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <base href="./">
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Rails Template</title>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stimulus_include_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
   <body>
-    <%= render "shared/header" %>
+    <%= render "shared/header" if user_signed_in? %>
     <main>
       <%= yield %>
     </main>
-    <%= render "shared/footer" %>
+    <%= render "shared/footer" if user_signed_in? %>
   </body>
 </html>

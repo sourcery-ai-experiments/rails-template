@@ -6,8 +6,8 @@ class User < ApplicationRecord
   # Extensions
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable, :lockable, :trackable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable, :confirmable
+
   include Statusable
 
   # Relationships
@@ -21,6 +21,10 @@ class User < ApplicationRecord
   # Class Methods
 
   # Instance Methods
+  def name
+    "#{first_name} #{last_name}"
+  end
+  alias :full_name :name
 
   def email_required?
     true

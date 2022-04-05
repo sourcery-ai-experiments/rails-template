@@ -9,6 +9,15 @@
 
 server '12.12.12.12', user: 'deploy', roles: %w[app db web]
 
+set :branch, :main
+
+append :linked_files, "config/credentials/production.key"
+
+set :sidekiq_service_unit_name, 'sidekiq-production'
+
+set :puma_threads, [0, 4]
+set :puma_workers, 2
+
 # role-based syntax
 # ==================
 
