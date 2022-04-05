@@ -1,6 +1,4 @@
-# Rails-Sprockets-Template
-
-Rails 6.1 Template without webpacker
+# Rails 7 Template
 
 ### Requirements
 1. Ruby 3.1.1
