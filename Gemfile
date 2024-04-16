@@ -13,7 +13,7 @@ gem "propshaft", "~> 0.8"
 gem "pg", "~> 1.5"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.6"
+gem 'puma', '~> 6.4'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails", "~> 1.3"
@@ -90,7 +90,7 @@ group :development do
   gem 'capistrano-rails-tail-log', "~> 0.1", require: false
   gem 'capistrano-rvm', "~> 0.1", require: false
   gem 'capistrano-sidekiq', "~> 2.3", require: false
-  gem 'capistrano3-puma', "~> 5.2", require: false
+  gem 'capistrano3-puma', "~> 1.2", require: false
   gem 'capistrano-yarn', "~> 2.0", require: false
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
