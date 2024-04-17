@@ -34,6 +34,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+!/app/assets/builds/.keep
+/app/assets/builds/*
+
 
 /.idea
 
